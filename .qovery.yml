@@ -1,0 +1,15 @@
+---
+application:
+  name: "gogs"
+  project: "Gogs"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "gogs"
+  version: "12"
+routers:
+- name: "main-gogs"
+  routes:
+  - application_name: "gogs"
+    paths:
+    - "/*"
